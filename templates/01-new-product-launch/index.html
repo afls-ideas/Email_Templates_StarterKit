@@ -94,15 +94,7 @@
                     <!-- PERSONALIZED MESSAGE (LSC_RichTextInput) -->
                     <tr>
                         <td style="padding: 10px 40px;">
-                            <!-- LSC_RichTextInput: personalMessage -->
-                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                    <td style="color: #555555; font-size: 15px; line-height: 1.6;">
-                                        {{personalMessage}}
-                                    </td>
-                                </tr>
-                            </table>
-                            <!-- /LSC_RichTextInput -->
+                            <div class="LSC_RichTextInput" style="color: #555555; font-size: 15px; line-height: 1.6;">Based on our recent conversation, I believe Cardivex may be a strong fit for your patients with uncontrolled hypertension. I would welcome the opportunity to discuss the clinical data in more detail at your convenience.</div>
                         </td>
                     </tr>
 
@@ -122,9 +114,7 @@
                     <!-- ADDITIONAL CLINICAL INFO (LSC_EmailFragments) -->
                     <tr>
                         <td style="padding: 20px 40px;">
-                            <!-- LSC_EmailFragments: clinicalInfo -->
-                            {{clinicalInfoFragments}}
-                            <!-- /LSC_EmailFragments -->
+                            <div class="LSC_EmailFragments" min="0" max="3">Select additional clinical information to include:</div>
                         </td>
                     </tr>
 

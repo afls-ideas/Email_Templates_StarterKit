@@ -164,30 +164,14 @@
                     <!-- EMAIL FRAGMENTS for materials -->
                     <tr>
                         <td style="padding: 0 40px 15px 40px;">
-                            <!--{{LSC_EmailFragments:Education Materials:Injection Training Details,Disease Overview Content,Flare Management Guide,Patient Stories Collection}}-->
-                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F0F6FB; border: 1px solid #D4E6F1; border-radius: 6px;">
-                                <tr>
-                                    <td style="padding: 15px 20px;">
-                                        <span style="font-size: 12px; color: #2874A6; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Detailed Material Content</span><br>
-                                        <span style="font-size: 13px; color: #888; font-style: italic;">[Content varies by selected material type]</span>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="LSC_EmailFragments" min="0" max="3">Select additional content:</div>
                         </td>
                     </tr>
 
                     <!-- PRESENTATION LINKS -->
                     <tr>
                         <td style="padding: 0 40px 15px 40px;">
-                            <!--{{LSC_PresentationLinks}}-->
-                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #2874A6; border-radius: 6px;">
-                                <tr>
-                                    <td style="padding: 15px 20px;">
-                                        <span style="font-size: 12px; color: #D6EAF8; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Related Presentations</span><br>
-                                        <span style="font-size: 13px; color: #AED6F1; font-style: italic;">[Presentation links will appear here]</span>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="LSC_PresentationLinks"></div>
                         </td>
                     </tr>
 
@@ -200,8 +184,14 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <!--{{LSC_DropDownInput:Language Preference:English,Spanish,Chinese (Simplified),Korean,Vietnamese,French}}-->
-                                        <span style="font-size: 14px; color: #2874A6;">[Select language preference]</span>
+                                        <span class="LSC_DropDownInput">
+                                            <span default>English</span>
+                                            <span>Spanish</span>
+                                            <span>Chinese (Simplified)</span>
+                                            <span>Korean</span>
+                                            <span>Vietnamese</span>
+                                            <span>French</span>
+                                        </span>
                                     </td>
                                 </tr>
                             </table>

@@ -52,8 +52,8 @@
                                                 <td style="padding: 16px;">
                                                     <span style="font-size: 11px; color: #D35400; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Date &amp; Time</span><br>
                                                     <span style="font-size: 14px; color: #2c3e50; line-height: 1.8;">
-                                                        <!-- LSC_DateTimeInput: event_datetime -->
-                                                        {{LSC_DateTimeInput:event_datetime}}
+                                                        <span class="LSC_DateTimeInput" default="04/15/2026"></span>
+                                                        <span class="LSC_DateTimeInput" time="" timezone="" default="12:00"></span>
                                                     </span>
                                                 </td>
                                             </tr>
@@ -146,8 +146,15 @@
                                             </tr>
                                             <tr>
                                                 <td style="color: #fad7a0; font-size: 14px; line-height: 1.6; padding-bottom: 8px;">
-                                                    Dietary preference: <!-- LSC_DropDownInput: dietary_preference -->
-                                                    {{LSC_DropDownInput:dietary_preference:No Preference|Vegetarian|Vegan|Gluten-Free|Halal|Kosher|Nut-Free}}
+                                                    Dietary preference: <span class="LSC_DropDownInput">
+                                                        <span default>No Preference</span>
+                                                        <span>Vegetarian</span>
+                                                        <span>Vegan</span>
+                                                        <span>Gluten-Free</span>
+                                                        <span>Halal</span>
+                                                        <span>Kosher</span>
+                                                        <span>Nut-Free</span>
+                                                    </span>
                                                 </td>
                                             </tr>
                                             <tr>

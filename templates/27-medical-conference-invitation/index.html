@@ -39,9 +39,7 @@
                                         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                                             <tr>
                                                 <td style="font-size: 14px; color: #D7BDE2;">
-                                                    <!-- LSC_DateTimeInput: conferenceDate -->
-                                                    {{conferenceDate}}
-                                                    <!-- /LSC_DateTimeInput -->
+                                                    <span class="LSC_DateTimeInput" default="11/14/2026"></span>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -171,16 +169,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <!-- LSC_DropDownInput: sessionPreference -->
-                                        <!-- Options: "HEART-4 Trial Results (Sat 10AM)", "Real-World Outcomes Panel (Sat 2:30PM)", "Case Studies Workshop (Sun 11AM)", "All Sessions" -->
-                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #E8DAEF; border-radius: 6px; background-color: #FAF5FC;">
-                                            <tr>
-                                                <td style="padding: 12px 15px; font-size: 14px; color: #2C3E50;">
-                                                    {{sessionPreference}}
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <!-- /LSC_DropDownInput -->
+                                        <span class="LSC_DropDownInput">
+                                            <span default>HEART-4 Trial Results (Sat 10AM)</span>
+                                            <span>Real-World Outcomes Panel (Sat 2:30PM)</span>
+                                            <span>Case Studies Workshop (Sun 11AM)</span>
+                                            <span>All Sessions</span>
+                                        </span>
                                     </td>
                                 </tr>
                             </table>

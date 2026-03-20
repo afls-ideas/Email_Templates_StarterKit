@@ -82,9 +82,7 @@
                                             </tr>
                                             <tr>
                                                 <td style="font-size: 14px; color: #566573; line-height: 1.7;">
-                                                    <!-- LSC_RichTextInput: personalNote -->
-                                                    {{personalNote}}
-                                                    <!-- /LSC_RichTextInput -->
+                                                    <div class="LSC_RichTextInput">I wanted to personally check in and see how things are going with your practice. I recall our last conversation about your interest in the updated safety data, and I have some exciting news to share.</div>
                                                 </td>
                                             </tr>
                                         </table>
@@ -102,67 +100,7 @@
                                     <td style="font-size: 18px; color: #1B4F72; font-weight: bold; padding-bottom: 15px;">Recent Product Updates</td>
                                 </tr>
                             </table>
-                            <!-- LSC_EmailFragments: productNews -->
-                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                    <td style="padding: 15px 18px; border-bottom: 1px solid #EAF2F8;">
-                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                                <td width="8" valign="top" style="padding-top: 6px;">
-                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr><td style="width: 8px; height: 8px; background-color: #1B4F72; border-radius: 50%;"></td></tr>
-                                                    </table>
-                                                </td>
-                                                <td style="padding-left: 12px;">
-                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr><td style="font-size: 14px; color: #2C3E50; font-weight: bold;">Cardivex New Indication Approved</td></tr>
-                                                        <tr><td style="font-size: 13px; color: #85929E; padding-top: 3px; line-height: 1.5;">FDA has approved Cardivex for use in pediatric patients ages 12-17 with resistant hypertension.</td></tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 15px 18px; border-bottom: 1px solid #EAF2F8;">
-                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                                <td width="8" valign="top" style="padding-top: 6px;">
-                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr><td style="width: 8px; height: 8px; background-color: #2E86C1; border-radius: 50%;"></td></tr>
-                                                    </table>
-                                                </td>
-                                                <td style="padding-left: 12px;">
-                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr><td style="font-size: 14px; color: #2C3E50; font-weight: bold;">Updated Safety Data Published</td></tr>
-                                                        <tr><td style="font-size: 13px; color: #85929E; padding-top: 3px; line-height: 1.5;">Five-year real-world safety data published in the New England Journal of Medicine confirms favorable long-term profile.</td></tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 15px 18px;">
-                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                                <td width="8" valign="top" style="padding-top: 6px;">
-                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr><td style="width: 8px; height: 8px; background-color: #5DADE2; border-radius: 50%;"></td></tr>
-                                                    </table>
-                                                </td>
-                                                <td style="padding-left: 12px;">
-                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr><td style="font-size: 14px; color: #2C3E50; font-weight: bold;">Enhanced Copay Program Launched</td></tr>
-                                                        <tr><td style="font-size: 13px; color: #85929E; padding-top: 3px; line-height: 1.5;">Patients may now pay as little as $0 per fill with our expanded copay assistance. No income restrictions.</td></tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!-- /LSC_EmailFragments -->
+                            <div class="LSC_EmailFragments" min="1" max="5">Select product updates to include:</div>
                         </td>
                     </tr>
 
@@ -222,15 +160,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <!-- LSC_DateTimeInput: nextMeeting -->
-                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F8FBFE; border: 1px solid #D4E6F1; border-radius: 6px;">
-                                                        <tr>
-                                                            <td style="padding: 12px 15px; font-size: 14px; color: #2C3E50;">
-                                                                {{nextMeeting}}
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <!-- /LSC_DateTimeInput -->
+                                                    <span class="LSC_DateTimeInput" default="04/15/2026"></span>
                                                 </td>
                                             </tr>
                                         </table>

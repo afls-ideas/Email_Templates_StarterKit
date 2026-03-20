@@ -46,16 +46,14 @@
                     <!-- STUDY SELECTOR (LSC_DropDownInput) -->
                     <tr>
                         <td style="padding: 10px 40px 20px 40px;">
-                            <!-- LSC_DropDownInput: studySelector -->
                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F0FAF8; border-radius: 6px; border: 1px solid #CCE8E3;">
                                 <tr>
                                     <td style="padding: 12px 16px;">
                                         <p style="color: #006B5E; font-size: 12px; font-weight: 600; margin: 0 0 4px 0;">Selected Study:</p>
-                                        <p style="color: #333; font-size: 14px; margin: 0;">{{studySelector}}</p>
+                                        <p style="color: #333; font-size: 14px; margin: 0;"><span class="LSC_DropDownInput"><span default>CLARITY Phase III Trial</span><span>RESOLVE Open-Label Extension</span><span>BEACON Subgroup Analysis</span></span></p>
                                     </td>
                                 </tr>
                             </table>
-                            <!-- /LSC_DropDownInput -->
                         </td>
                     </tr>
 
@@ -112,20 +110,13 @@
                     <!-- STUDY DETAILS (LSC_EmailFragments) -->
                     <tr>
                         <td style="padding: 0 40px 20px 40px;">
-                            <!-- LSC_EmailFragments: studyDetails -->
-                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #E0E0E0; border-radius: 6px;">
+                            <table class="LSC_EmailFragments" min="0" max="3" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #E0E0E0; border-radius: 6px;">
                                 <tr>
                                     <td style="background-color: #F8FAFA; padding: 14px 16px; border-bottom: 1px solid #E0E0E0;">
                                         <p style="color: #006B5E; font-size: 13px; font-weight: 700; margin: 0;">Study Details</p>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td style="padding: 14px 16px;">
-                                        {{studyDetailsFragments}}
-                                    </td>
-                                </tr>
                             </table>
-                            <!-- /LSC_EmailFragments -->
                         </td>
                     </tr>
 

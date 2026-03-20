@@ -47,16 +47,14 @@
                     <!-- PATIENT POPULATION SELECTOR (LSC_DropDownInput) -->
                     <tr>
                         <td style="padding: 10px 40px 16px 40px;">
-                            <!-- LSC_DropDownInput: patientPopulation -->
                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F4F9F5; border: 1px solid #C5DEC9; border-radius: 6px;">
                                 <tr>
                                     <td style="padding: 12px 16px;">
                                         <p style="color: #4A7C59; font-size: 12px; font-weight: 600; margin: 0 0 2px 0;">Patient Population:</p>
-                                        <p style="color: #333; font-size: 14px; font-weight: 600; margin: 0;">{{patientPopulation}}</p>
+                                        <p style="color: #333; font-size: 14px; font-weight: 600; margin: 0;"><span class="LSC_DropDownInput"><span default>Adults (General Population)</span><span>Elderly (65+ years)</span><span>Renal Impairment (CrCl 30-60 mL/min)</span><span>Hepatic Impairment (Child-Pugh A/B)</span></span></p>
                                     </td>
                                 </tr>
                             </table>
-                            <!-- /LSC_DropDownInput -->
                         </td>
                     </tr>
 
@@ -149,16 +147,14 @@
                     <!-- REP NOTES (LSC_RichTextInput) -->
                     <tr>
                         <td style="padding: 0 40px 20px 40px;">
-                            <!-- LSC_RichTextInput: dosingNotes -->
                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFBF0; border: 1px solid #E8DFC0; border-radius: 6px;">
                                 <tr>
                                     <td style="padding: 14px 16px;">
                                         <p style="color: #8B7D3C; font-size: 12px; font-weight: 600; margin: 0 0 6px 0;">Additional Notes:</p>
-                                        <div style="color: #555; font-size: 14px; line-height: 1.6;">{{dosingNotes}}</div>
+                                        <div class="LSC_RichTextInput" style="color: #555; font-size: 14px; line-height: 1.6;">Please note that dose adjustments may be needed based on individual patient tolerability. I am happy to discuss the optimal titration approach for your specific patient population.</div>
                                     </td>
                                 </tr>
                             </table>
-                            <!-- /LSC_RichTextInput -->
                         </td>
                     </tr>
 

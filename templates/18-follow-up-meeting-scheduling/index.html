@@ -65,8 +65,7 @@
                                 </tr>
                                 <tr>
                                     <td style="padding: 12px 20px 18px 20px; font-size: 14px; color: #555555; line-height: 1.7;">
-                                        <!-- LSC_RichTextInput: meeting_recap -->
-                                        {{LSC_RichTextInput:meeting_recap:Summarize key points from your previous meeting with this HCP...}}
+                                        <div class="LSC_RichTextInput" required="true">During our last meeting, we discussed key clinical data and how it may apply to your patient population. I wanted to follow up on the topics we covered and address any remaining questions.</div>
                                     </td>
                                 </tr>
                             </table>
@@ -90,8 +89,8 @@
                                                     <span style="font-size: 20px; color: #117A65;">&#128339;</span>
                                                 </td>
                                                 <td style="vertical-align: middle; font-size: 15px; color: #333;">
-                                                    <!-- LSC_DateTimeInput: proposed_followup_time -->
-                                                    {{LSC_DateTimeInput:proposed_followup_time}}
+                                                    <span class="LSC_DateTimeInput" default="04/15/2026"></span>
+                                                    <span class="LSC_DateTimeInput" time="" timezone="" default="10:00"></span>
                                                 </td>
                                             </tr>
                                         </table>
@@ -112,8 +111,15 @@
                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f4faf7; border: 1px solid #d5f5e3; border-radius: 8px;">
                                 <tr>
                                     <td style="padding: 16px 20px; font-size: 14px; color: #555;">
-                                        Primary topic: <!-- LSC_DropDownInput: followup_topic -->
-                                        {{LSC_DropDownInput:followup_topic:Efficacy Data Deep Dive|Safety Profile Review|Patient Case Discussion|Dosing & Administration|Formulary & Access|Peer-to-Peer Referral|Sample Request}}
+                                        Primary topic: <span class="LSC_DropDownInput">
+                                            <span default>Efficacy Data Deep Dive</span>
+                                            <span>Safety Profile Review</span>
+                                            <span>Patient Case Discussion</span>
+                                            <span>Dosing &amp; Administration</span>
+                                            <span>Formulary &amp; Access</span>
+                                            <span>Peer-to-Peer Referral</span>
+                                            <span>Sample Request</span>
+                                        </span>
                                     </td>
                                 </tr>
                             </table>

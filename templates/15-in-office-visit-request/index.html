@@ -71,8 +71,7 @@
                                                     Proposed Date
                                                 </td>
                                                 <td style="padding: 8px 0; font-size: 15px; color: #2c3e50; vertical-align: top;">
-                                                    <!-- LSC_DateTimeInput: proposed_datetime -->
-                                                    {{LSC_DateTimeInput:proposed_datetime}}
+                                                    <span class="LSC_DateTimeInput" default="12/10/2024"></span> at <span class="LSC_DateTimeInput" time="" timezone="" default="10:00"></span>
                                                 </td>
                                             </tr>
                                             <!-- Purpose -->
@@ -81,8 +80,14 @@
                                                     Purpose
                                                 </td>
                                                 <td style="padding: 8px 0; font-size: 15px; color: #2c3e50; vertical-align: top;">
-                                                    <!-- LSC_DropDownInput: visit_purpose -->
-                                                    {{LSC_DropDownInput:visit_purpose:Product Update|New Clinical Data|Sample Drop-off|Formulary Discussion|Patient Support Programs|General Check-in}}
+                                                    <span class="LSC_DropDownInput">
+                                                        <span default>Product Update</span>
+                                                        <span>New Clinical Data</span>
+                                                        <span>Sample Drop-off</span>
+                                                        <span>Formulary Discussion</span>
+                                                        <span>Patient Support Programs</span>
+                                                        <span>General Check-in</span>
+                                                    </span>
                                                 </td>
                                             </tr>
                                             <!-- Duration -->
@@ -107,8 +112,7 @@
                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left: 3px solid #2874A6; background-color: #fafcfe;">
                                 <tr>
                                     <td style="padding: 16px 20px; font-size: 14px; color: #555555; line-height: 1.6;">
-                                        <!-- LSC_RichTextInput: personalized_message -->
-                                        {{LSC_RichTextInput:personalized_message:Add a personal note about what you'd like to discuss or share during the visit...}}
+                                        <div class="LSC_RichTextInput">Add a personal note about what you'd like to discuss or share during the visit...</div>
                                     </td>
                                 </tr>
                             </table>

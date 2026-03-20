@@ -45,8 +45,13 @@
                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #e8f5f1; border-radius: 6px;">
                                 <tr>
                                     <td style="padding: 12px 18px; font-size: 13px; color: #117864;">
-                                        <!-- LSC_DropDownInput: Preferred Specialty Pharmacy -->
-                                        <strong>Select Preferred SP:</strong> [AccordantHealth / BioPlus / Optum Specialty / AllianceRx Walgreens / Accredo]
+                                        <strong>Select Preferred SP:</strong> <span class="LSC_DropDownInput">
+                                            <span default>AccordantHealth</span>
+                                            <span>BioPlus</span>
+                                            <span>Optum Specialty</span>
+                                            <span>AllianceRx Walgreens</span>
+                                            <span>Accredo</span>
+                                        </span>
                                     </td>
                                 </tr>
                             </table>
@@ -188,14 +193,7 @@
                     <tr>
                         <td style="padding: 0 40px 20px 40px;">
                             <p style="margin: 0 0 8px 0; font-size: 14px; font-weight: bold; color: #117864;">Patient-Specific Notes:</p>
-                            <!-- LSC_RichTextInput -->
-                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px dashed #117864; border-radius: 4px;">
-                                <tr>
-                                    <td style="padding: 12px 15px; font-size: 13px; color: #999999; font-style: italic;">
-                                        [Add patient-specific coordination notes or special instructions]
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="LSC_RichTextInput">Add patient-specific coordination notes or special instructions for the specialty pharmacy referral.</div>
                         </td>
                     </tr>
 

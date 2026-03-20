@@ -89,10 +89,9 @@
                                         </table>
                                     </td>
                                 </tr>
-                                <!-- LSC_EmailFragments for additional speaker details -->
                                 <tr>
                                     <td style="padding: 0 20px 16px 20px;">
-                                        {{LSC_EmailFragments:speaker_details}}
+                                        <div class="LSC_EmailFragments" min="0" max="2">Select additional speaker details to include:</div>
                                     </td>
                                 </tr>
                             </table>
@@ -110,8 +109,7 @@
                                                 <td style="padding: 18px 16px;">
                                                     <span style="font-size: 11px; color: #7D3C98; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Date &amp; Time</span><br>
                                                     <span style="font-size: 14px; color: #2c3e50; line-height: 2;">
-                                                        <!-- LSC_DateTimeInput: event_date -->
-                                                        {{LSC_DateTimeInput:event_date}}<br>
+                                                        <span class="LSC_DateTimeInput" default="04/22/2026"></span><br>
                                                         Cocktails: 6:30 PM<br>
                                                         Dinner &amp; Program: 7:00 PM
                                                     </span>

@@ -60,8 +60,14 @@
                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ebedef; border-radius: 6px;">
                                 <tr>
                                     <td style="padding: 12px 18px; font-size: 13px; color: #2C3E50;">
-                                        <!-- LSC_DropDownInput: Section of Interest -->
-                                        <strong>View section of interest:</strong> [Indications / Dosage &amp; Administration / Warnings / Adverse Reactions / Drug Interactions / Use in Specific Populations]
+                                        <strong>View section of interest:</strong> <span class="LSC_DropDownInput">
+                                            <span default>Indications</span>
+                                            <span>Dosage &amp; Administration</span>
+                                            <span>Warnings</span>
+                                            <span>Adverse Reactions</span>
+                                            <span>Drug Interactions</span>
+                                            <span>Use in Specific Populations</span>
+                                        </span>
                                     </td>
                                 </tr>
                             </table>
@@ -167,8 +173,7 @@
                     <!-- LSC COMPONENTS -->
                     <tr>
                         <td style="padding: 0 40px 20px 40px;">
-                            <!-- LSC_EmailFragments -->
-                            <p style="margin: 0; font-size: 13px; color: #888888; font-style: italic;">[Detailed PI section fragments will appear here]</p>
+                            <div class="LSC_EmailFragments" min="1" max="3">Select detailed PI section content:</div>
                         </td>
                     </tr>
 

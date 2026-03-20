@@ -124,18 +124,16 @@
                                     <td style="padding: 18px;">
                                         <p style="margin: 0 0 10px 0; font-size: 14px; font-weight: bold; color: #1B4F72;">Request Information</p>
                                         <p style="margin: 0 0 12px 0; font-size: 13px; color: #555555;">
-                                            <!-- LSC_DropDownInput: Info Type Requested -->
-                                            <strong>Category of Interest:</strong> [Clinical Data / Dosing Info / Safety Data / Formulary Support / Other]
+                                            <strong>Category of Interest:</strong> <span class="LSC_DropDownInput">
+                                                <span default>Clinical Data</span>
+                                                <span>Dosing Info</span>
+                                                <span>Safety Data</span>
+                                                <span>Formulary Support</span>
+                                                <span>Other</span>
+                                            </span>
                                         </p>
                                         <p style="margin: 0 0 8px 0; font-size: 13px; color: #555555; font-weight: bold;">Your Specific Question:</p>
-                                        <!-- LSC_RichTextInput -->
-                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px dashed #1B4F72; border-radius: 4px; background-color: #ffffff;">
-                                            <tr>
-                                                <td style="padding: 12px 15px; font-size: 13px; color: #999999; font-style: italic;">
-                                                    [Enter your specific medical information question here]
-                                                </td>
-                                            </tr>
-                                        </table>
+                                        <div class="LSC_RichTextInput">Enter your specific medical information question here.</div>
                                     </td>
                                 </tr>
                             </table>
@@ -145,8 +143,7 @@
                     <!-- LSC EMAIL FRAGMENTS -->
                     <tr>
                         <td style="padding: 0 40px 20px 40px;">
-                            <!-- LSC_EmailFragments -->
-                            <p style="margin: 0; font-size: 13px; color: #888888; font-style: italic;">[Medical information email fragments will appear here]</p>
+                            <div class="LSC_EmailFragments" min="1" max="3">Select medical information resources:</div>
                         </td>
                     </tr>
 

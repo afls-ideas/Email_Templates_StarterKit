@@ -123,9 +123,7 @@
                                 </tr>
                                 <tr>
                                     <td style="background-color: #F0FAF4; border-radius: 8px; padding: 18px; border: 1px dashed #A9DFBF;">
-                                        <!-- LSC_RichTextInput: patientFeedback -->
-                                        {{patientFeedback}}
-                                        <!-- /LSC_RichTextInput -->
+                                        <div class="LSC_RichTextInput">Please share any observations about how your patients have responded to the Osteovance samples, including efficacy, tolerability, and any questions that have come up.</div>
                                     </td>
                                 </tr>
                             </table>
@@ -149,16 +147,12 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <!-- LSC_DropDownInput: sampleQuantity -->
-                                                    <!-- Options: "1 box (30 tablets)", "2 boxes (60 tablets)", "3 boxes (90 tablets)", "Other - please specify" -->
-                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #D5F5E3; border-radius: 6px; background-color: #ffffff;">
-                                                        <tr>
-                                                            <td style="padding: 12px 15px; font-size: 14px; color: #2C3E50;">
-                                                                {{sampleQuantity}}
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <!-- /LSC_DropDownInput -->
+                                                    <span class="LSC_DropDownInput">
+                                                        <span default>1 box (30 tablets)</span>
+                                                        <span>2 boxes (60 tablets)</span>
+                                                        <span>3 boxes (90 tablets)</span>
+                                                        <span>Other - please specify</span>
+                                                    </span>
                                                 </td>
                                             </tr>
                                         </table>
