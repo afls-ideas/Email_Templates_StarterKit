@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Information Request Response</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #EBF5FB; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EBF5FB;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px rgba(46,134,193,0.1);">
+
+                    <!-- HEADER -->
+                    <tr>
+                        <td style="padding: 35px 40px 25px 40px; background-color: #ffffff;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td width="60" valign="top">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 48px; height: 48px; background-color: #2E86C1; border-radius: 50%; text-align: center; line-height: 48px; font-size: 22px; color: #ffffff;">&#10003;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td valign="middle">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 22px; color: #2C3E50; font-weight: bold;">Your Information Is Ready</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 13px; color: #2E86C1; padding-top: 3px;">Response to your recent inquiry</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- BLUE DIVIDER -->
+                    <tr>
+                        <td style="padding: 0 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="border-bottom: 3px solid #2E86C1;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING & ACKNOWLEDGMENT -->
+                    <tr>
+                        <td style="padding: 25px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 15px; color: #566573; line-height: 1.7;">
+                                        Dear Dr. {{recipient.lastname}},<br><br>
+                                        Thank you for your interest in learning more about Pulmonex. I have compiled the information you requested below. Please find detailed resources organized by topic for your convenience.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- CUSTOM RESPONSE -->
+                    <tr>
+                        <td style="padding: 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F0F8FF; border-radius: 8px; border-left: 4px solid #2E86C1;">
+                                <tr>
+                                    <td style="padding: 20px 22px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 13px; color: #2E86C1; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 8px;">Personalized Response</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 14px; color: #566573; line-height: 1.7;">
+                                                    <!-- LSC_RichTextInput: customResponse -->
+                                                    {{customResponse}}
+                                                    <!-- /LSC_RichTextInput -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- INFORMATION TOPICS -->
+                    <tr>
+                        <td style="padding: 15px 40px 5px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 18px; color: #2C3E50; font-weight: bold; padding-bottom: 15px;">Requested Resources</td>
+                                </tr>
+                            </table>
+                            <!-- LSC_EmailFragments: informationTopics -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <!-- Topic 1 -->
+                                <tr>
+                                    <td style="padding: 16px 20px; background-color: #ffffff; border: 1px solid #D6EAF8; border-radius: 8px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="45" valign="top">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 36px; height: 36px; background-color: #D6EAF8; border-radius: 6px; text-align: center; line-height: 36px; font-size: 16px; color: #2E86C1; font-weight: bold;">01</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 15px; color: #2C3E50; font-weight: bold;">Mechanism of Action</td></tr>
+                                                        <tr><td style="font-size: 13px; color: #85929E; padding-top: 4px; line-height: 1.5;">Detailed overview of Pulmonex dual-pathway mechanism and receptor binding profile</td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td style="height: 10px;"></td></tr>
+                                <!-- Topic 2 -->
+                                <tr>
+                                    <td style="padding: 16px 20px; background-color: #ffffff; border: 1px solid #D6EAF8; border-radius: 8px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="45" valign="top">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 36px; height: 36px; background-color: #D6EAF8; border-radius: 6px; text-align: center; line-height: 36px; font-size: 16px; color: #2E86C1; font-weight: bold;">02</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 15px; color: #2C3E50; font-weight: bold;">Clinical Trial Results</td></tr>
+                                                        <tr><td style="font-size: 13px; color: #85929E; padding-top: 4px; line-height: 1.5;">BREATHE-1 and BREATHE-2 pivotal trial efficacy and safety endpoints</td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td style="height: 10px;"></td></tr>
+                                <!-- Topic 3 -->
+                                <tr>
+                                    <td style="padding: 16px 20px; background-color: #ffffff; border: 1px solid #D6EAF8; border-radius: 8px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="45" valign="top">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 36px; height: 36px; background-color: #D6EAF8; border-radius: 6px; text-align: center; line-height: 36px; font-size: 16px; color: #2E86C1; font-weight: bold;">03</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 15px; color: #2C3E50; font-weight: bold;">Formulary &amp; Access</td></tr>
+                                                        <tr><td style="font-size: 13px; color: #85929E; padding-top: 4px; line-height: 1.5;">Coverage information, copay assistance, and prior authorization guidance</td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- /LSC_EmailFragments -->
+                        </td>
+                    </tr>
+
+                    <!-- ATTACHED RESOURCES / PRESENTATION LINKS -->
+                    <tr>
+                        <td style="padding: 25px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 18px; color: #2C3E50; font-weight: bold; padding-bottom: 15px;">Attached Resources</td>
+                                </tr>
+                            </table>
+                            <!-- LSC_PresentationLinks: resourceLinks -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td width="50%" style="padding-right: 6px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #2E86C1; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 18px 16px; text-align: center;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 24px; color: #ffffff; text-align: center;">&#128203;</td></tr>
+                                                        <tr><td style="font-size: 13px; color: #ffffff; font-weight: bold; text-align: center; padding-top: 6px;">Prescribing Info</td></tr>
+                                                        <tr><td style="font-size: 11px; color: #AED6F1; text-align: center; padding-top: 3px;">PDF Document</td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="50%" style="padding-left: 6px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #2471A3; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 18px 16px; text-align: center;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 24px; color: #ffffff; text-align: center;">&#128200;</td></tr>
+                                                        <tr><td style="font-size: 13px; color: #ffffff; font-weight: bold; text-align: center; padding-top: 6px;">Clinical Data Deck</td></tr>
+                                                        <tr><td style="font-size: 11px; color: #AED6F1; text-align: center; padding-top: 3px;">Presentation</td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- /LSC_PresentationLinks -->
+                        </td>
+                    </tr>
+
+                    <!-- CLOSING -->
+                    <tr>
+                        <td style="padding: 25px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 15px; color: #566573; line-height: 1.7;">
+                                        If you need any additional information or would like to discuss these materials further, please do not hesitate to reach out. I am here to help.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 20px; font-size: 15px; color: #2C3E50;">
+                                        Sincerely,<br>
+                                        <strong>{{sender.firstname}} {{sender.lastname}}</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="padding: 20px 40px; background-color: #EBF5FB; border-top: 1px solid #D6EAF8;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 11px; color: #85C1E9; line-height: 1.6; text-align: center;">
+                                        This email was sent by {{sender.firstname}} {{sender.lastname}} on behalf of Your Company.<br>
+                                        For medical inquiries, please contact Medical Information at 1-800-XXX-XXXX.<br>
+                                        &copy; 2026 Your Company. All rights reserved.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

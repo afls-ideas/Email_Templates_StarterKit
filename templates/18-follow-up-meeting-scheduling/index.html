@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Follow-Up Meeting Request</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #e8f8f5; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #e8f8f5;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 8px rgba(17,122,101,0.08);">
+
+                    <!-- MINIMAL HEADER -->
+                    <tr>
+                        <td style="padding: 32px 40px 0 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="border-bottom: 3px solid #117A65; padding-bottom: 6px;">
+                                                    <span style="font-size: 12px; color: #117A65; font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">Follow-Up</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 12px; font-size: 22px; font-weight: bold; color: #1c2833; line-height: 1.3;">
+                                        Let's Continue Our Conversation
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING -->
+                    <tr>
+                        <td style="padding: 24px 40px 16px 40px; font-size: 15px; color: #333333; line-height: 1.6;">
+                            Dear Dr. {{recipient.lastname}},
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0 40px 24px 40px; font-size: 15px; color: #555555; line-height: 1.7;">
+                            Thank you for taking the time to meet with me recently. I'd like to schedule a follow-up to continue our discussion and address any additional questions you may have.
+                        </td>
+                    </tr>
+
+                    <!-- RECAP SECTION - LSC_RichTextInput -->
+                    <tr>
+                        <td style="padding: 0 40px 24px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #eafaf1; border-radius: 8px; border: 1px solid #a9dfbf;">
+                                <tr>
+                                    <td style="padding: 18px 20px 6px 20px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="background-color: #117A65; color: #fff; font-size: 10px; font-weight: bold; padding: 3px 10px; border-radius: 3px; text-transform: uppercase; letter-spacing: 1px;">
+                                                    Recap from Our Last Meeting
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 12px 20px 18px 20px; font-size: 14px; color: #555555; line-height: 1.7;">
+                                        <!-- LSC_RichTextInput: meeting_recap -->
+                                        {{LSC_RichTextInput:meeting_recap:Summarize key points from your previous meeting with this HCP...}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- PROPOSED TIMES -->
+                    <tr>
+                        <td style="padding: 0 40px 10px 40px; font-size: 14px; font-weight: bold; color: #117A65; text-transform: uppercase; letter-spacing: 1px;">
+                            Proposed Meeting Time
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0 40px 24px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding: 14px 20px; background-color: #f4faf7; border: 1px solid #d5f5e3; border-radius: 8px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="40" style="vertical-align: middle;">
+                                                    <span style="font-size: 20px; color: #117A65;">&#128339;</span>
+                                                </td>
+                                                <td style="vertical-align: middle; font-size: 15px; color: #333;">
+                                                    <!-- LSC_DateTimeInput: proposed_followup_time -->
+                                                    {{LSC_DateTimeInput:proposed_followup_time}}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- TOPICS - LSC_DropDownInput -->
+                    <tr>
+                        <td style="padding: 0 40px 10px 40px; font-size: 14px; font-weight: bold; color: #117A65; text-transform: uppercase; letter-spacing: 1px;">
+                            Topics for Follow-Up
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0 40px 24px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f4faf7; border: 1px solid #d5f5e3; border-radius: 8px;">
+                                <tr>
+                                    <td style="padding: 16px 20px; font-size: 14px; color: #555;">
+                                        Primary topic: <!-- LSC_DropDownInput: followup_topic -->
+                                        {{LSC_DropDownInput:followup_topic:Efficacy Data Deep Dive|Safety Profile Review|Patient Case Discussion|Dosing & Administration|Formulary & Access|Peer-to-Peer Referral|Sample Request}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- CTAs -->
+                    <tr>
+                        <td style="padding: 10px 40px 30px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td style="background-color: #117A65; border-radius: 8px; padding: 14px 36px;">
+                                                    <a href="#" style="color: #ffffff; text-decoration: none; font-size: 15px; font-weight: bold;">Confirm This Time</a>
+                                                </td>
+                                                <td width="16">&nbsp;</td>
+                                                <td style="border: 2px solid #117A65; border-radius: 8px; padding: 12px 28px;">
+                                                    <a href="#" style="color: #117A65; text-decoration: none; font-size: 15px; font-weight: bold;">Propose New Time</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="background-color: #f4faf7; padding: 24px 40px; border-top: 1px solid #d5f5e3;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 13px; color: #555555; line-height: 1.5;">
+                                        Looking forward to reconnecting,<br>
+                                        <strong>{{sender.firstname}} {{sender.lastname}}</strong><br>
+                                        {{sender.title}} | {{sender.company}}<br>
+                                        {{sender.phone}} | {{sender.email}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 16px; font-size: 11px; color: #999999; line-height: 1.5;">
+                                        {{compliance.disclaimer}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Dinner Program Invitation</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F9EBEA; font-family: Georgia, 'Times New Roman', serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F9EBEA;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; overflow: hidden; border: 1px solid #E6B0AA;">
+
+                    <!-- ELEGANT HEADER -->
+                    <tr>
+                        <td style="background-color: #7B241C; padding: 40px 40px 30px 40px; text-align: center;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="border: 1px solid rgba(255,255,255,0.3); padding: 3px 20px;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="font-size: 11px; color: #F5B7B1; letter-spacing: 4px; text-transform: uppercase;">You Are Cordially Invited</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 20px; font-size: 30px; color: #ffffff; font-weight: normal; text-align: center; line-height: 1.3; font-style: italic;">An Evening of Insight</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 5px; font-size: 15px; color: #F5B7B1; text-align: center; letter-spacing: 1px;">A Sponsored Dinner Program</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 15px;" align="center">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 40px; border-bottom: 1px solid #F5B7B1;"></td>
+                                                <td style="padding: 0 10px; font-size: 14px; color: #F5B7B1;">&#10043;</td>
+                                                <td style="width: 40px; border-bottom: 1px solid #F5B7B1;"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- DATE / TIME / VENUE -->
+                    <tr>
+                        <td style="padding: 25px 40px 15px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td width="33%" align="center" style="border-right: 1px solid #FADBD8; padding: 10px 5px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr><td style="font-size: 11px; color: #C0392B; text-transform: uppercase; letter-spacing: 1px; text-align: center;">Date</td></tr>
+                                            <tr>
+                                                <td style="font-size: 14px; color: #2C3E50; font-weight: bold; padding-top: 4px; text-align: center;">
+                                                    <!-- LSC_DateTimeInput: dinnerDate -->
+                                                    {{dinnerDate}}
+                                                    <!-- /LSC_DateTimeInput -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="33%" align="center" style="border-right: 1px solid #FADBD8; padding: 10px 5px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr><td style="font-size: 11px; color: #C0392B; text-transform: uppercase; letter-spacing: 1px; text-align: center;">Time</td></tr>
+                                            <tr><td style="font-size: 14px; color: #2C3E50; font-weight: bold; padding-top: 4px; text-align: center;">6:30 PM</td></tr>
+                                        </table>
+                                    </td>
+                                    <td width="33%" align="center" style="padding: 10px 5px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr><td style="font-size: 11px; color: #C0392B; text-transform: uppercase; letter-spacing: 1px; text-align: center;">Dress</td></tr>
+                                            <tr><td style="font-size: 14px; color: #2C3E50; font-weight: bold; padding-top: 4px; text-align: center;">Business Casual</td></tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING -->
+                    <tr>
+                        <td style="padding: 15px 40px 15px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 15px; color: #566573; line-height: 1.8; font-family: Georgia, 'Times New Roman', serif;">
+                                        Dear Dr. {{recipient.lastname}},<br><br>
+                                        We would be delighted to have you join us for an intimate evening of fine dining and an engaging presentation on emerging cardiovascular treatment strategies.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- SPEAKER INFO -->
+                    <tr>
+                        <td style="padding: 10px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #FDEDEC; border-radius: 8px;">
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 11px; color: #7B241C; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; padding-bottom: 10px; font-family: Arial, sans-serif;">Featured Speaker</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td width="70" valign="top">
+                                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td style="width: 60px; height: 60px; background-color: #7B241C; border-radius: 50%; text-align: center; line-height: 60px; color: #ffffff; font-size: 22px; font-weight: bold; font-family: Arial, sans-serif;">AT</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td valign="middle">
+                                                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr><td style="font-size: 16px; color: #2C3E50; font-weight: bold;">Dr. Andrew Torres, MD, FACC</td></tr>
+                                                                    <tr><td style="font-size: 13px; color: #7B241C; padding-top: 2px;">Director of Cardiac Research, Stanford Medical Center</td></tr>
+                                                                    <tr><td style="font-size: 12px; color: #85929E; padding-top: 4px; font-family: Arial, sans-serif; font-style: italic;">"Managing Complex CV Patients: The Role of Cardivex"</td></tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- VENUE & MENU -->
+                    <tr>
+                        <td style="padding: 5px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td width="50%" valign="top" style="padding-right: 10px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 13px; color: #7B241C; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 10px; font-family: Arial, sans-serif;">Venue</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 15px; color: #2C3E50; font-weight: bold;">The Capital Grille</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 13px; color: #85929E; line-height: 1.6; padding-top: 4px; font-family: Arial, sans-serif;">
+                                                    87 Newbury Street<br>
+                                                    Boston, MA 02116<br>
+                                                    Private Dining Room
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="50%" valign="top" style="padding-left: 10px; border-left: 1px solid #FADBD8;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 13px; color: #7B241C; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 10px; font-family: Arial, sans-serif;">Menu Preview</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 13px; color: #566573; line-height: 1.8; font-family: Georgia, 'Times New Roman', serif;">
+                                                    <em>Starter:</em> Seasonal Salad<br>
+                                                    <em>Entr&eacute;e:</em> Chef's Selection<br>
+                                                    <em>Dessert:</em> Cr&egrave;me Br&ucirc;l&eacute;e
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- DIETARY NEEDS & GUEST -->
+                    <tr>
+                        <td style="padding: 10px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #FADBD8; border-radius: 8px;">
+                                <tr>
+                                    <td style="padding: 18px 20px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="50%" valign="top" style="padding-right: 10px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="font-size: 13px; color: #7B241C; font-weight: bold; padding-bottom: 8px; font-family: Arial, sans-serif;">Dietary Requirements</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <!-- LSC_DropDownInput: dietaryNeeds -->
+                                                                <!-- Options: "No Restrictions", "Vegetarian", "Vegan", "Gluten-Free", "Kosher", "Halal", "Other - Please Specify" -->
+                                                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #FADBD8; border-radius: 4px; background-color: #FEF9E7;">
+                                                                    <tr>
+                                                                        <td style="padding: 10px 12px; font-size: 13px; color: #2C3E50; font-family: Arial, sans-serif;">
+                                                                            {{dietaryNeeds}}
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <!-- /LSC_DropDownInput -->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="50%" valign="top" style="padding-left: 10px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="font-size: 13px; color: #7B241C; font-weight: bold; padding-bottom: 8px; font-family: Arial, sans-serif;">Bringing a Guest?</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-size: 12px; color: #85929E; line-height: 1.6; font-family: Arial, sans-serif;">
+                                                                You are welcome to bring one guest (HCP only). Please let us know when you RSVP.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- RSVP CTA -->
+                    <tr>
+                        <td style="padding: 10px 40px 30px 40px;" align="center">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="background-color: #7B241C; border-radius: 6px;">
+                                        <a href="#" style="display: inline-block; padding: 15px 50px; font-size: 16px; color: #ffffff; text-decoration: none; font-weight: bold; font-family: Georgia, 'Times New Roman', serif; letter-spacing: 1px;">RSVP Now</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding-top: 10px; font-size: 12px; color: #C0392B; text-align: center; font-family: Arial, sans-serif;">Seating is limited. Please respond by April 1, 2026.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- CLOSING -->
+                    <tr>
+                        <td style="padding: 0 40px 25px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 15px; color: #566573; line-height: 1.7; font-family: Georgia, 'Times New Roman', serif;">
+                                        We hope you will join us for an exceptional evening.<br><br>
+                                        Warm regards,<br>
+                                        <strong style="color: #2C3E50;">{{sender.firstname}} {{sender.lastname}}</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="padding: 20px 40px; background-color: #7B241C;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 11px; color: #E6B0AA; line-height: 1.6; text-align: center; font-family: Arial, sans-serif;">
+                                        This email was sent by {{sender.firstname}} {{sender.lastname}} on behalf of Your Company.<br>
+                                        This program is sponsored by Your Company. Attendance is limited to healthcare professionals.<br>
+                                        &copy; 2026 Your Company. All rights reserved.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

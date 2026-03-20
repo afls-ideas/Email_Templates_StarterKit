@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Seasonal Vaccination Reminder</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #eaf2f8; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #eaf2f8;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+
+                    <!-- SEASONAL ACCENT -->
+                    <tr>
+                        <td style="background-color: #1A5276; height: 4px; font-size: 1px; line-height: 1px;">&nbsp;</td>
+                    </tr>
+
+                    <!-- HEADER WITH SEASONAL THEME -->
+                    <tr>
+                        <td style="padding: 30px 40px; background-color: #1A5276;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="vertical-align: middle;">
+                                                    <p style="margin: 0 0 3px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #85c1e9; font-weight: bold;">2026-2027 Season</p>
+                                                    <p style="margin: 0 0 8px 0; font-size: 24px; font-weight: bold; color: #ffffff; line-height: 1.2;">
+                                                        Seasonal Vaccination<br>Availability Update
+                                                    </p>
+                                                    <p style="margin: 0; font-size: 14px; color: #aed6f1;">VacciShield&reg; Influenza &amp; Respiratory Vaccines</p>
+                                                </td>
+                                                <td width="80" style="vertical-align: top; text-align: right;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right">
+                                                        <tr>
+                                                            <td style="width: 65px; height: 65px; background-color: #2980b9; border-radius: 50%; text-align: center; vertical-align: middle;">
+                                                                <span style="font-size: 28px; color: #ffffff;">&#9733;</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING -->
+                    <tr>
+                        <td style="padding: 28px 40px 20px 40px; font-size: 15px; color: #333333; line-height: 1.7;">
+                            Dear {{recipient.firstname}},<br><br>
+                            As we approach the 2026-2027 respiratory season, I wanted to share important vaccine availability and ordering information to help you prepare your practice for the upcoming vaccination season.
+                        </td>
+                    </tr>
+
+                    <!-- VACCINE TYPE SELECTOR -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #eaf2f8; border-radius: 6px;">
+                                <tr>
+                                    <td style="padding: 12px 18px; font-size: 13px; color: #1A5276;">
+                                        <!-- LSC_DropDownInput: Vaccine Type -->
+                                        <strong>Select Vaccine of Interest:</strong> [Quadrivalent Flu (Standard) / High-Dose Flu (65+) / Adjuvanted Flu / RSV Vaccine / COVID-19 Updated Booster]
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- VACCINE AVAILABILITY -->
+                    <tr>
+                        <td style="padding: 0 40px 5px 40px; font-size: 17px; font-weight: bold; color: #1A5276;">
+                            Vaccine Availability
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <!-- Vaccine 1 -->
+                                <tr>
+                                    <td style="padding: 0 0 8px 0;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #d4e6f1; border-radius: 6px; overflow: hidden;">
+                                            <tr>
+                                                <td width="8" style="background-color: #27ae60;"></td>
+                                                <td style="padding: 12px 15px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td>
+                                                                <p style="margin: 0 0 3px 0; font-size: 14px; font-weight: bold; color: #1A5276;">VacciShield Quad&trade; (Quadrivalent)</p>
+                                                                <p style="margin: 0; font-size: 12px; color: #666666;">Ages 6 months+ | Pre-filled syringe &amp; MDV</p>
+                                                            </td>
+                                                            <td width="80" style="text-align: right; vertical-align: top;">
+                                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right">
+                                                                    <tr>
+                                                                        <td style="background-color: #27ae60; color: #ffffff; font-size: 10px; font-weight: bold; padding: 3px 8px; border-radius: 3px;">IN STOCK</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Vaccine 2 -->
+                                <tr>
+                                    <td style="padding: 0 0 8px 0;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #d4e6f1; border-radius: 6px; overflow: hidden;">
+                                            <tr>
+                                                <td width="8" style="background-color: #27ae60;"></td>
+                                                <td style="padding: 12px 15px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td>
+                                                                <p style="margin: 0 0 3px 0; font-size: 14px; font-weight: bold; color: #1A5276;">VacciShield HD65&trade; (High-Dose)</p>
+                                                                <p style="margin: 0; font-size: 12px; color: #666666;">Ages 65+ | Pre-filled syringe</p>
+                                                            </td>
+                                                            <td width="80" style="text-align: right; vertical-align: top;">
+                                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right">
+                                                                    <tr>
+                                                                        <td style="background-color: #27ae60; color: #ffffff; font-size: 10px; font-weight: bold; padding: 3px 8px; border-radius: 3px;">IN STOCK</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Vaccine 3 -->
+                                <tr>
+                                    <td style="padding: 0 0 8px 0;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #d4e6f1; border-radius: 6px; overflow: hidden;">
+                                            <tr>
+                                                <td width="8" style="background-color: #f39c12;"></td>
+                                                <td style="padding: 12px 15px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td>
+                                                                <p style="margin: 0 0 3px 0; font-size: 14px; font-weight: bold; color: #1A5276;">VacciShield RSV&trade; (RSV Vaccine)</p>
+                                                                <p style="margin: 0; font-size: 12px; color: #666666;">Ages 60+ and maternal (32-36 wks) | Pre-filled syringe</p>
+                                                            </td>
+                                                            <td width="100" style="text-align: right; vertical-align: top;">
+                                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right">
+                                                                    <tr>
+                                                                        <td style="background-color: #f39c12; color: #ffffff; font-size: 10px; font-weight: bold; padding: 3px 8px; border-radius: 3px;">LIMITED SUPPLY</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ORDERING -->
+                    <tr>
+                        <td style="padding: 0 40px 5px 40px; font-size: 17px; font-weight: bold; color: #1A5276;">
+                            Ordering Information
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 40px 5px 40px; font-size: 14px; color: #444444; line-height: 1.7;">
+                            Orders can be placed through your preferred distributor or directly via the VacciShield ordering portal. Early ordering is recommended to secure allocation.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #eaf2f8; border-radius: 6px;">
+                                <tr>
+                                    <td style="padding: 12px 18px; font-size: 13px; color: #1A5276;">
+                                        <!-- LSC_DateTimeInput: Preferred Order Date -->
+                                        <strong>Preferred Order/Delivery Date:</strong> [Select Date]
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- STORAGE REQUIREMENTS -->
+                    <tr>
+                        <td style="padding: 0 40px 5px 40px; font-size: 17px; font-weight: bold; color: #1A5276;">
+                            Storage Requirements
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left: 4px solid #1A5276; background-color: #f8fbfd;">
+                                <tr>
+                                    <td style="padding: 12px 15px; font-size: 13px; color: #555555; line-height: 1.7;">
+                                        <strong>Temperature:</strong> Store at 2-8&deg;C (36-46&deg;F). Do not freeze.<br>
+                                        <strong>Light:</strong> Protect from light. Store in original carton until use.<br>
+                                        <strong>Shelf Life:</strong> Use within stated expiration date on label.<br>
+                                        <strong>After Opening (MDV):</strong> Discard multi-dose vial 28 days after first puncture.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- PATIENT POPULATION RECS -->
+                    <tr>
+                        <td style="padding: 0 40px 5px 40px; font-size: 17px; font-weight: bold; color: #1A5276;">
+                            Patient Population Recommendations
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td width="50%" style="padding: 0 5px 8px 0; vertical-align: top;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #1A5276; border-radius: 6px;">
+                                            <tr>
+                                                <td style="padding: 12px 14px;">
+                                                    <p style="margin: 0 0 4px 0; font-size: 13px; font-weight: bold; color: #ffffff;">High Priority</p>
+                                                    <p style="margin: 0; font-size: 11px; color: #aed6f1; line-height: 1.5;">Adults 65+, immunocompromised, pregnant, chronic conditions (diabetes, COPD, heart disease)</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="50%" style="padding: 0 0 8px 5px; vertical-align: top;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #2980b9; border-radius: 6px;">
+                                            <tr>
+                                                <td style="padding: 12px 14px;">
+                                                    <p style="margin: 0 0 4px 0; font-size: 13px; font-weight: bold; color: #ffffff;">Standard Priority</p>
+                                                    <p style="margin: 0; font-size: 11px; color: #aed6f1; line-height: 1.5;">All adults 18-64, healthcare workers, childcare workers, household contacts of high-risk</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ADDITIONAL NOTES -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <p style="margin: 0 0 8px 0; font-size: 14px; font-weight: bold; color: #1A5276;">Additional Notes:</p>
+                            <!-- LSC_RichTextInput -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px dashed #1A5276; border-radius: 4px;">
+                                <tr>
+                                    <td style="padding: 12px 15px; font-size: 13px; color: #999999; font-style: italic;">
+                                        [Add personalized notes about vaccination season preparation]
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- SIGNATURE -->
+                    <tr>
+                        <td style="padding: 10px 40px 5px 40px; font-size: 14px; color: #333333; line-height: 1.6;">
+                            Please let me know how I can support your practice's vaccination efforts this season.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 40px 30px 40px; font-size: 14px; color: #333333;">
+                            Best regards,<br>
+                            <strong>{{sender.firstname}} {{sender.lastname}}</strong><br>
+                            <span style="font-size: 12px; color: #777777;">Vaccine Account Manager | VacciShield Biologics</span>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="background-color: #1A5276; padding: 20px 40px;">
+                            <p style="margin: 0 0 5px 0; font-size: 11px; color: #aed6f1; line-height: 1.5;">
+                                Vaccine recommendations are based on ACIP guidelines. Please refer to CDC immunization schedules for complete recommendations.
+                            </p>
+                            <p style="margin: 0; font-size: 10px; color: #85c1e9;">
+                                &copy; 2026 VacciShield Biologics. All rights reserved. | PP-VS-US-2026-0048 | For Healthcare Professional Use Only
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

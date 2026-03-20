@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Oncovex - Product Comparison</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F0EDF4; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F0EDF4;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.07);">
+
+                    <!-- HEADER -->
+                    <tr>
+                        <td style="background-color: #6C3483; padding: 26px 40px;">
+                            <p style="color: #C9A8E0; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Comparative Analysis</p>
+                            <h1 style="color: #ffffff; margin: 8px 0 0 0; font-size: 24px;">Product Comparison</h1>
+                            <p style="color: #D8BFE8; font-size: 13px; margin: 6px 0 0 0;">Oncovex<sup>&reg;</sup> vs. Standard of Care in mCRC</p>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING -->
+                    <tr>
+                        <td style="padding: 24px 40px 12px 40px;">
+                            <p style="color: #333; font-size: 15px; margin: 0;">Dear {{recipient.name}},</p>
+                            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 10px 0 0 0;">Below is a side-by-side comparison of <strong style="color: #6C3483;">Oncovex<sup>&reg;</sup></strong> (vorituzumab) with current treatment options for metastatic colorectal cancer.</p>
+                        </td>
+                    </tr>
+
+                    <!-- COMPARATOR SELECTOR (LSC_DropDownInput) -->
+                    <tr>
+                        <td style="padding: 10px 40px 16px 40px;">
+                            <!-- LSC_DropDownInput: comparator -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F5F0FA; border: 1px solid #D8BFE8; border-radius: 6px;">
+                                <tr>
+                                    <td style="padding: 12px 16px;">
+                                        <p style="color: #6C3483; font-size: 12px; font-weight: 600; margin: 0 0 2px 0;">Comparator Selected:</p>
+                                        <p style="color: #333; font-size: 14px; font-weight: 600; margin: 0;">{{comparator}}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- /LSC_DropDownInput -->
+                        </td>
+                    </tr>
+
+                    <!-- COMPARISON TABLE -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #D8D0E0; border-radius: 8px; overflow: hidden;">
+                                <!-- Table Header -->
+                                <tr>
+                                    <td style="background-color: #F5F0FA; padding: 10px 12px; font-size: 12px; color: #888; font-weight: 600; width: 34%; border-bottom: 2px solid #D8D0E0; border-right: 1px solid #D8D0E0;">Parameter</td>
+                                    <td style="background-color: #6C3483; padding: 10px 12px; font-size: 12px; color: #fff; font-weight: 700; width: 33%; border-bottom: 2px solid #D8D0E0; border-right: 1px solid #552A6A; text-align: center;">Oncovex<sup>&reg;</sup></td>
+                                    <td style="background-color: #888888; padding: 10px 12px; font-size: 12px; color: #fff; font-weight: 700; width: 33%; border-bottom: 2px solid #D8D0E0; text-align: center;">Comparator</td>
+                                </tr>
+                                <!-- Row: Mechanism -->
+                                <tr>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #555; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; font-weight: 600;">Mechanism</td>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #333; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; text-align: center;">Bispecific T-cell<br>engager antibody</td>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #333; border-bottom: 1px solid #F0F0F0; text-align: center;">VEGF<br>inhibitor</td>
+                                </tr>
+                                <!-- Row: ORR -->
+                                <tr>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #555; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; background-color: #FCFAFD; font-weight: 600;">Overall Response Rate</td>
+                                    <td style="padding: 10px 12px; font-size: 12px; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; background-color: #F5F0FA; text-align: center;"><strong style="color: #6C3483; font-size: 16px;">47.2%</strong></td>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #333; border-bottom: 1px solid #F0F0F0; background-color: #FCFAFD; text-align: center;">31.8%</td>
+                                </tr>
+                                <!-- Row: mPFS -->
+                                <tr>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #555; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; font-weight: 600;">Median PFS</td>
+                                    <td style="padding: 10px 12px; font-size: 12px; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; text-align: center;"><strong style="color: #6C3483; font-size: 16px;">9.4 mo</strong></td>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #333; border-bottom: 1px solid #F0F0F0; text-align: center;">6.8 mo</td>
+                                </tr>
+                                <!-- Row: mOS -->
+                                <tr>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #555; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; background-color: #FCFAFD; font-weight: 600;">Median OS</td>
+                                    <td style="padding: 10px 12px; font-size: 12px; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; background-color: #F5F0FA; text-align: center;"><strong style="color: #6C3483; font-size: 16px;">18.1 mo</strong></td>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #333; border-bottom: 1px solid #F0F0F0; background-color: #FCFAFD; text-align: center;">14.3 mo</td>
+                                </tr>
+                                <!-- Row: Admin -->
+                                <tr>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #555; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; font-weight: 600;">Administration</td>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #333; border-bottom: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; text-align: center;">IV Q3W</td>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #333; border-bottom: 1px solid #F0F0F0; text-align: center;">IV Q2W</td>
+                                </tr>
+                                <!-- Row: Grade 3+ AEs -->
+                                <tr>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #555; border-right: 1px solid #F0F0F0; background-color: #FCFAFD; font-weight: 600;">Grade &ge;3 AEs</td>
+                                    <td style="padding: 10px 12px; font-size: 12px; border-right: 1px solid #F0F0F0; background-color: #F5F0FA; text-align: center;"><strong style="color: #6C3483;">28.4%</strong></td>
+                                    <td style="padding: 10px 12px; font-size: 12px; color: #333; background-color: #FCFAFD; text-align: center;">35.1%</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- KEY DIFFERENTIATORS -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <p style="color: #6C3483; font-size: 14px; font-weight: 700; margin: 0 0 10px 0;">Key Differentiators</p>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding: 8px 0; border-bottom: 1px solid #F0F0F0;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="24" valign="top" style="color: #6C3483; font-size: 14px; font-weight: bold;">&#9654;</td>
+                                                <td style="color: #444; font-size: 13px; line-height: 1.5;">Novel bispecific mechanism targeting both CEA and CD3 for T-cell directed cytotoxicity</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0; border-bottom: 1px solid #F0F0F0;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="24" valign="top" style="color: #6C3483; font-size: 14px; font-weight: bold;">&#9654;</td>
+                                                <td style="color: #444; font-size: 13px; line-height: 1.5;">Less frequent dosing schedule (Q3W vs. Q2W) reducing infusion burden</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="24" valign="top" style="color: #6C3483; font-size: 14px; font-weight: bold;">&#9654;</td>
+                                                <td style="color: #444; font-size: 13px; line-height: 1.5;">Lower rate of grade &ge;3 adverse events compared to standard of care</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- DETAILED DATA (LSC_EmailFragments) -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <!-- LSC_EmailFragments: comparisonData -->
+                            {{comparisonDataFragments}}
+                            <!-- /LSC_EmailFragments -->
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="padding: 10px 40px 20px 40px;">
+                            <p style="color: #555; font-size: 14px; margin: 0 0 4px 0;">Sincerely,</p>
+                            <p style="color: #6C3483; font-size: 15px; font-weight: 600; margin: 0;">{{sender.firstname}} {{sender.lastname}}</p>
+                            <p style="color: #888; font-size: 13px; margin: 4px 0 0 0;">{{sender.title}} | {{sender.company}}</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background-color: #F5F0F8; padding: 14px 40px; text-align: center;">
+                            <p style="font-size: 10px; color: #999; line-height: 1.5; margin: 0;">This email was sent via Life Sciences Cloud. Cross-trial comparisons have inherent limitations.<br>Oncovex<sup>&reg;</sup> is a registered trademark. All rights reserved.</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

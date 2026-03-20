@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Lunch & Learn Invitation</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #fdf2e9; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fdf2e9;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 12px; overflow: hidden;">
+
+                    <!-- HERO HEADER -->
+                    <tr>
+                        <td style="background-color: #D35400; padding: 0;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding: 40px 40px 16px 40px; text-align: center;">
+                                        <span style="font-size: 40px;">&#127869;</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0 40px; text-align: center; color: #ffffff; font-size: 11px; text-transform: uppercase; letter-spacing: 3px;">
+                                        You're Invited
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 40px 12px 40px; text-align: center; color: #ffffff; font-size: 26px; font-weight: bold; line-height: 1.3;">
+                                        Lunch &amp; Learn
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0 40px 30px 40px; text-align: center; color: #fad7a0; font-size: 14px; line-height: 1.5;">
+                                        Advances in COPD Triple Therapy: Optimizing Patient Outcomes with Pulmonex
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- EVENT DETAILS GRID -->
+                    <tr>
+                        <td style="padding: 30px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <!-- Row 1: Date & Time -->
+                                <tr>
+                                    <td width="50%" style="padding: 0 8px 16px 0; vertical-align: top;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fef5e7; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 16px;">
+                                                    <span style="font-size: 11px; color: #D35400; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Date &amp; Time</span><br>
+                                                    <span style="font-size: 14px; color: #2c3e50; line-height: 1.8;">
+                                                        <!-- LSC_DateTimeInput: event_datetime -->
+                                                        {{LSC_DateTimeInput:event_datetime}}
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="50%" style="padding: 0 0 16px 8px; vertical-align: top;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fef5e7; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 16px;">
+                                                    <span style="font-size: 11px; color: #D35400; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Location</span><br>
+                                                    <span style="font-size: 14px; color: #2c3e50; line-height: 1.8;">
+                                                        Your Office<br>Conference Room
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Row 2: Duration & Menu -->
+                                <tr>
+                                    <td width="50%" style="padding: 0 8px 16px 0; vertical-align: top;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fef5e7; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 16px;">
+                                                    <span style="font-size: 11px; color: #D35400; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Duration</span><br>
+                                                    <span style="font-size: 14px; color: #2c3e50; line-height: 1.8;">45 minutes</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="50%" style="padding: 0 0 16px 8px; vertical-align: top;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fef5e7; border-radius: 8px;">
+                                            <tr>
+                                                <td style="padding: 16px;">
+                                                    <span style="font-size: 11px; color: #D35400; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Lunch Provided</span><br>
+                                                    <span style="font-size: 14px; color: #2c3e50; line-height: 1.8;">Catered by<br>Local Kitchen Co.</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING + TOPIC -->
+                    <tr>
+                        <td style="padding: 10px 40px 16px 40px; font-size: 15px; color: #333333; line-height: 1.6;">
+                            Dear Dr. {{recipient.lastname}},
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px; font-size: 15px; color: #555555; line-height: 1.7;">
+                            I'd like to invite you and your team to a complimentary lunch and learn session. We'll cover the latest data on triple therapy approaches in COPD and how <strong>Pulmonex</strong> fits into modern treatment algorithms.
+                        </td>
+                    </tr>
+
+                    <!-- TOPIC OVERVIEW -->
+                    <tr>
+                        <td style="padding: 0 40px 24px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left: 4px solid #D35400;">
+                                <tr>
+                                    <td style="padding: 0 0 0 16px;">
+                                        <span style="font-size: 13px; color: #D35400; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Topics We'll Cover</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0 0 16px; font-size: 14px; color: #555; line-height: 2.0;">
+                                        &#9654; Current GOLD guidelines and when to escalate therapy<br>
+                                        &#9654; BREATHE-COMPARE trial highlights<br>
+                                        &#9654; Practical tips for patient selection<br>
+                                        &#9654; Q&amp;A with your clinical questions
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- RSVP / DIETARY PREFS -->
+                    <tr>
+                        <td style="padding: 0 40px 24px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #D35400; border-radius: 10px;">
+                                <tr>
+                                    <td style="padding: 24px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="color: #ffffff; font-size: 16px; font-weight: bold; padding-bottom: 12px;">
+                                                    RSVP &amp; Dietary Preferences
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #fad7a0; font-size: 14px; line-height: 1.6; padding-bottom: 8px;">
+                                                    Dietary preference: <!-- LSC_DropDownInput: dietary_preference -->
+                                                    {{LSC_DropDownInput:dietary_preference:No Preference|Vegetarian|Vegan|Gluten-Free|Halal|Kosher|Nut-Free}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 12px; text-align: center;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td style="background-color: #ffffff; border-radius: 8px; padding: 14px 40px;">
+                                                                <a href="#" style="color: #D35400; text-decoration: none; font-size: 15px; font-weight: bold;">RSVP - Count Me In!</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="background-color: #fef9f2; padding: 24px 40px; border-top: 1px solid #f5cba7;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 13px; color: #555555; line-height: 1.5;">
+                                        Looking forward to it,<br>
+                                        <strong>{{sender.firstname}} {{sender.lastname}}</strong><br>
+                                        {{sender.title}} | {{sender.company}}<br>
+                                        {{sender.phone}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 16px; font-size: 11px; color: #999999; line-height: 1.5;">
+                                        This event is sponsored by {{sender.company}}. Meals provided in accordance with applicable compliance guidelines. {{compliance.disclaimer}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

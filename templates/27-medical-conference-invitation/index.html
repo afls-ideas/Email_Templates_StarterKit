@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Medical Conference Invitation</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F5EEF8; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F5EEF8;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; overflow: hidden; border-radius: 0;">
+
+                    <!-- CONFERENCE BANNER -->
+                    <tr>
+                        <td style="background-color: #4A235A; padding: 0;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding: 40px 40px 15px 40px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 11px; color: #BB8FCE; letter-spacing: 3px; text-transform: uppercase; font-weight: bold;">You Are Invited</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0 40px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 30px; color: #ffffff; font-weight: bold; line-height: 1.2;">AHA Scientific<br>Sessions 2026</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px 40px 10px 40px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 14px; color: #D7BDE2;">
+                                                    <!-- LSC_DateTimeInput: conferenceDate -->
+                                                    {{conferenceDate}}
+                                                    <!-- /LSC_DateTimeInput -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 14px; color: #D7BDE2; padding-top: 3px;">McCormick Place, Chicago, IL</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px 40px 30px 40px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="background-color: rgba(255,255,255,0.2); border-radius: 6px; padding: 10px 20px;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="font-size: 12px; color: #E8DAEF;">Visit Us at Booth</td>
+                                                            <td style="font-size: 22px; color: #ffffff; font-weight: bold; padding-left: 10px;">#4217</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING -->
+                    <tr>
+                        <td style="padding: 30px 40px 15px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 15px; color: #566573; line-height: 1.7;">
+                                        Dear Dr. {{recipient.lastname}},<br><br>
+                                        We are excited to be exhibiting at AHA Scientific Sessions this year and would love for you to visit our booth. We have some exciting presentations and activities planned that I think you will find valuable.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FEATURED PRESENTATIONS SCHEDULE -->
+                    <tr>
+                        <td style="padding: 15px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 18px; color: #4A235A; font-weight: bold; padding-bottom: 15px;">Featured Presentations</td>
+                                </tr>
+                            </table>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <!-- Presentation 1 -->
+                                <tr>
+                                    <td>
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left: 3px solid #4A235A;">
+                                            <tr>
+                                                <td width="80" valign="top" style="padding: 12px 15px; background-color: #F5EEF8;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 11px; color: #4A235A; font-weight: bold;">SAT</td></tr>
+                                                        <tr><td style="font-size: 12px; color: #7D3C98;">10:00 AM</td></tr>
+                                                    </table>
+                                                </td>
+                                                <td style="padding: 12px 15px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 14px; color: #2C3E50; font-weight: bold;">Cardivex HEART-4 Trial Results</td></tr>
+                                                        <tr><td style="font-size: 12px; color: #85929E; padding-top: 3px;">Dr. Maria Chen, Principal Investigator</td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td style="height: 8px;"></td></tr>
+                                <!-- Presentation 2 -->
+                                <tr>
+                                    <td>
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left: 3px solid #7D3C98;">
+                                            <tr>
+                                                <td width="80" valign="top" style="padding: 12px 15px; background-color: #F5EEF8;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 11px; color: #4A235A; font-weight: bold;">SAT</td></tr>
+                                                        <tr><td style="font-size: 12px; color: #7D3C98;">2:30 PM</td></tr>
+                                                    </table>
+                                                </td>
+                                                <td style="padding: 12px 15px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 14px; color: #2C3E50; font-weight: bold;">Real-World Outcomes in Heart Failure</td></tr>
+                                                        <tr><td style="font-size: 12px; color: #85929E; padding-top: 3px;">Panel Discussion with KOLs</td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td style="height: 8px;"></td></tr>
+                                <!-- Presentation 3 -->
+                                <tr>
+                                    <td>
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left: 3px solid #BB8FCE;">
+                                            <tr>
+                                                <td width="80" valign="top" style="padding: 12px 15px; background-color: #F5EEF8;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 11px; color: #4A235A; font-weight: bold;">SUN</td></tr>
+                                                        <tr><td style="font-size: 12px; color: #7D3C98;">11:00 AM</td></tr>
+                                                    </table>
+                                                </td>
+                                                <td style="padding: 12px 15px;">
+                                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr><td style="font-size: 14px; color: #2C3E50; font-weight: bold;">Interactive Case Studies Workshop</td></tr>
+                                                        <tr><td style="font-size: 12px; color: #85929E; padding-top: 3px;">Hands-on session at Booth #4217</td></tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- SESSION PREFERENCE -->
+                    <tr>
+                        <td style="padding: 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 14px; color: #4A235A; font-weight: bold; padding-bottom: 8px;">Which session interests you most?</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- LSC_DropDownInput: sessionPreference -->
+                                        <!-- Options: "HEART-4 Trial Results (Sat 10AM)", "Real-World Outcomes Panel (Sat 2:30PM)", "Case Studies Workshop (Sun 11AM)", "All Sessions" -->
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #E8DAEF; border-radius: 6px; background-color: #FAF5FC;">
+                                            <tr>
+                                                <td style="padding: 12px 15px; font-size: 14px; color: #2C3E50;">
+                                                    {{sessionPreference}}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- /LSC_DropDownInput -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- MEET THE TEAM -->
+                    <tr>
+                        <td style="padding: 15px 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 18px; color: #4A235A; font-weight: bold; padding-bottom: 15px;">Meet the Team</td>
+                                </tr>
+                            </table>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td width="33%" align="center" valign="top" style="padding: 0 5px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 64px; height: 64px; background-color: #4A235A; border-radius: 50%; text-align: center; line-height: 64px; color: #ffffff; font-size: 22px; font-weight: bold;">MC</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 8px; font-size: 13px; color: #2C3E50; font-weight: bold; text-align: center;">Dr. M. Chen</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 11px; color: #85929E; text-align: center;">Medical Director</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="33%" align="center" valign="top" style="padding: 0 5px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 64px; height: 64px; background-color: #7D3C98; border-radius: 50%; text-align: center; line-height: 64px; color: #ffffff; font-size: 22px; font-weight: bold;">JR</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 8px; font-size: 13px; color: #2C3E50; font-weight: bold; text-align: center;">Dr. J. Reyes</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 11px; color: #85929E; text-align: center;">Head of R&amp;D</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="33%" align="center" valign="top" style="padding: 0 5px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="width: 64px; height: 64px; background-color: #BB8FCE; border-radius: 50%; text-align: center; line-height: 64px; color: #ffffff; font-size: 22px; font-weight: bold;">SP</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 8px; font-size: 13px; color: #2C3E50; font-weight: bold; text-align: center;">S. Patel</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 11px; color: #85929E; text-align: center;">Field Medical</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- CTA -->
+                    <tr>
+                        <td style="padding: 15px 40px 30px 40px;" align="center">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="background-color: #4A235A; border-radius: 6px;">
+                                        <a href="#" style="display: inline-block; padding: 15px 45px; font-size: 15px; color: #ffffff; text-decoration: none; font-weight: bold;">Schedule a Booth Visit</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- CLOSING -->
+                    <tr>
+                        <td style="padding: 0 40px 25px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 14px; color: #566573; line-height: 1.6;">
+                                        Looking forward to seeing you there!<br><br>
+                                        Best,<br>
+                                        <strong style="color: #2C3E50;">{{sender.firstname}} {{sender.lastname}}</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="padding: 20px 40px; background-color: #4A235A;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 11px; color: #BB8FCE; line-height: 1.6; text-align: center;">
+                                        This email was sent by {{sender.firstname}} {{sender.lastname}} on behalf of Your Company.<br>
+                                        If you no longer wish to receive these communications, please contact your representative.<br>
+                                        &copy; 2026 Your Company. All rights reserved.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

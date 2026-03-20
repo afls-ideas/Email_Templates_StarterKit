@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Post-Visit Thank You</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #EBF5FB; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EBF5FB;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+
+                    <!-- HEADER -->
+                    <tr>
+                        <td style="background-color: #1A5276; padding: 0;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding: 30px 40px 20px 40px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 14px; color: #AED6F1; letter-spacing: 2px; text-transform: uppercase; font-weight: bold;">Your Company</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0 40px 30px 40px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 26px; color: #ffffff; font-weight: bold; line-height: 1.3;">Thank You for Your Time</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 8px; font-size: 15px; color: #D4E6F1;">It was a pleasure visiting your office</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- WARM GREETING -->
+                    <tr>
+                        <td style="padding: 35px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 16px; color: #2C3E50; line-height: 1.6;">
+                                        Dear Dr. {{recipient.lastname}},
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 15px; color: #566573; line-height: 1.7; padding-top: 15px;">
+                                        Thank you for taking the time to meet with me today. I truly value our conversation and appreciate you sharing your insights on patient care. Your dedication to your patients is inspiring.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- VISIT RECAP -->
+                    <tr>
+                        <td style="padding: 25px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left: 4px solid #1A5276; background-color: #F8FBFD;">
+                                <tr>
+                                    <td style="padding: 20px 25px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 14px; color: #1A5276; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 10px;">Visit Recap</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 14px; color: #566573; line-height: 1.7;">
+                                                    <!-- LSC_RichTextInput: visitRecap -->
+                                                    {{visitRecap}}
+                                                    <!-- /LSC_RichTextInput -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- KEY DISCUSSION POINTS -->
+                    <tr>
+                        <td style="padding: 25px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 18px; color: #1A5276; font-weight: bold; padding-bottom: 15px;">Key Discussion Points</td>
+                                </tr>
+                            </table>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding: 12px 15px; background-color: #FAFAFA; border-radius: 6px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="30" valign="top" style="color: #1A5276; font-size: 18px; font-weight: bold;">1.</td>
+                                                <td style="font-size: 14px; color: #566573; line-height: 1.6;">Cardivex efficacy data in hypertensive patients with comorbid conditions</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td style="height: 8px;"></td></tr>
+                                <tr>
+                                    <td style="padding: 12px 15px; background-color: #FAFAFA; border-radius: 6px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="30" valign="top" style="color: #1A5276; font-size: 18px; font-weight: bold;">2.</td>
+                                                <td style="font-size: 14px; color: #566573; line-height: 1.6;">Updated dosing guidelines and titration schedule</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr><td style="height: 8px;"></td></tr>
+                                <tr>
+                                    <td style="padding: 12px 15px; background-color: #FAFAFA; border-radius: 6px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="30" valign="top" style="color: #1A5276; font-size: 18px; font-weight: bold;">3.</td>
+                                                <td style="font-size: 14px; color: #566573; line-height: 1.6;">Patient support programs and copay assistance options</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- MATERIALS DISCUSSED -->
+                    <tr>
+                        <td style="padding: 25px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 18px; color: #1A5276; font-weight: bold; padding-bottom: 15px;">Materials Discussed</td>
+                                </tr>
+                            </table>
+                            <!-- LSC_PresentationLinks: materialLinks -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #D5E8F0; border-radius: 6px; overflow: hidden;">
+                                <tr>
+                                    <td style="padding: 15px; border-bottom: 1px solid #EAF2F8;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="40" valign="top" style="color: #1A5276; font-size: 20px;">&#128196;</td>
+                                                <td style="font-size: 14px; color: #2E86C1; font-weight: bold;">Cardivex Clinical Data Summary</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="40" valign="top" style="color: #1A5276; font-size: 20px;">&#128196;</td>
+                                                <td style="font-size: 14px; color: #2E86C1; font-weight: bold;">Prescribing Information &amp; Dosing Guide</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- /LSC_PresentationLinks -->
+                        </td>
+                    </tr>
+
+                    <!-- NEXT STEPS & FOLLOW-UP DATE -->
+                    <tr>
+                        <td style="padding: 25px 40px 10px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #1A5276; border-radius: 8px;">
+                                <tr>
+                                    <td style="padding: 25px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="font-size: 16px; color: #ffffff; font-weight: bold; padding-bottom: 12px;">Next Steps</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 14px; color: #D4E6F1; line-height: 1.7; padding-bottom: 15px;">
+                                                    I will follow up with the additional clinical data you requested. Please do not hesitate to reach out if you have any questions in the meantime.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="font-size: 13px; color: #AED6F1; font-weight: bold;">Proposed Follow-Up Date:</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-size: 15px; color: #ffffff; padding-top: 4px;">
+                                                                <!-- LSC_DateTimeInput: followUpDate -->
+                                                                {{followUpDate}}
+                                                                <!-- /LSC_DateTimeInput -->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- CLOSING -->
+                    <tr>
+                        <td style="padding: 30px 40px 15px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 15px; color: #566573; line-height: 1.7;">
+                                        Thank you again for your time and partnership. I look forward to our continued collaboration in improving patient outcomes.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 20px; font-size: 15px; color: #2C3E50;">
+                                        Warm regards,<br>
+                                        <strong>{{sender.firstname}} {{sender.lastname}}</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="padding: 25px 40px; background-color: #F4F6F7; border-top: 1px solid #E5E8E8;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size: 11px; color: #99A3A4; line-height: 1.6; text-align: center;">
+                                        This email was sent by {{sender.firstname}} {{sender.lastname}} on behalf of Your Company.<br>
+                                        If you no longer wish to receive these communications, please contact your representative.<br>
+                                        &copy; 2026 Your Company. All rights reserved.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Renavox - Dosing and Administration</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f0f0f0; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0f0f0;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+
+                    <!-- HEADER -->
+                    <tr>
+                        <td style="background-color: #4A7C59; padding: 24px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <h1 style="color: #ffffff; margin: 0; font-size: 22px; font-weight: 700;">Renavox<sup style="font-size: 12px;">&reg;</sup> Dosing Guide</h1>
+                                        <p style="color: #B8D8C2; font-size: 13px; margin: 6px 0 0 0;">(mitraxenol HCl) Extended-Release Capsules</p>
+                                    </td>
+                                    <td width="100" align="right" valign="middle">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="border: 2px solid #ffffff; border-radius: 6px; padding: 6px 12px; text-align: center;">
+                                                    <p style="color: #fff; font-size: 10px; margin: 0; text-transform: uppercase; letter-spacing: 1px;">Dosing &amp;</p>
+                                                    <p style="color: #fff; font-size: 10px; margin: 0; text-transform: uppercase; letter-spacing: 1px;">Administration</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING -->
+                    <tr>
+                        <td style="padding: 24px 40px 12px 40px;">
+                            <p style="color: #333; font-size: 15px; margin: 0;">Dear {{recipient.name}},</p>
+                            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 10px 0 0 0;">Below is the recommended dosing information for <strong style="color: #4A7C59;">Renavox<sup>&reg;</sup></strong> based on your selected patient population.</p>
+                        </td>
+                    </tr>
+
+                    <!-- PATIENT POPULATION SELECTOR (LSC_DropDownInput) -->
+                    <tr>
+                        <td style="padding: 10px 40px 16px 40px;">
+                            <!-- LSC_DropDownInput: patientPopulation -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F4F9F5; border: 1px solid #C5DEC9; border-radius: 6px;">
+                                <tr>
+                                    <td style="padding: 12px 16px;">
+                                        <p style="color: #4A7C59; font-size: 12px; font-weight: 600; margin: 0 0 2px 0;">Patient Population:</p>
+                                        <p style="color: #333; font-size: 14px; font-weight: 600; margin: 0;">{{patientPopulation}}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- /LSC_DropDownInput -->
+                        </td>
+                    </tr>
+
+                    <!-- DOSING TABLE -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #D0D0D0; border-radius: 6px; overflow: hidden;">
+                                <!-- Table Header -->
+                                <tr>
+                                    <td style="background-color: #4A7C59; padding: 10px 14px; color: #fff; font-size: 12px; font-weight: 700; border-right: 1px solid #3D6A4B; width: 30%;">Phase</td>
+                                    <td style="background-color: #4A7C59; padding: 10px 14px; color: #fff; font-size: 12px; font-weight: 700; border-right: 1px solid #3D6A4B; width: 25%;">Dose</td>
+                                    <td style="background-color: #4A7C59; padding: 10px 14px; color: #fff; font-size: 12px; font-weight: 700; border-right: 1px solid #3D6A4B; width: 20%;">Frequency</td>
+                                    <td style="background-color: #4A7C59; padding: 10px 14px; color: #fff; font-size: 12px; font-weight: 700; width: 25%;">Duration</td>
+                                </tr>
+                                <!-- Row 1 -->
+                                <tr>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; background-color: #FAFAFA;">Initiation</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; background-color: #FAFAFA; font-weight: 600;">25 mg</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; background-color: #FAFAFA;">Once daily</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; background-color: #FAFAFA;">Weeks 1-2</td>
+                                </tr>
+                                <!-- Row 2 -->
+                                <tr>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8;">Titration</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; font-weight: 600;">50 mg</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8;">Once daily</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8;">Weeks 3-4</td>
+                                </tr>
+                                <!-- Row 3 -->
+                                <tr>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; background-color: #FAFAFA;">Maintenance</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; background-color: #FAFAFA; font-weight: 600;">75 mg</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8; background-color: #FAFAFA;">Once daily</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-bottom: 1px solid #E8E8E8; background-color: #FAFAFA;">Ongoing</td>
+                                </tr>
+                                <!-- Row 4 -->
+                                <tr>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-right: 1px solid #E8E8E8;">Max Dose</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-right: 1px solid #E8E8E8; font-weight: 600;">100 mg</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333; border-right: 1px solid #E8E8E8;">Once daily</td>
+                                    <td style="padding: 10px 14px; font-size: 13px; color: #333;">If tolerated</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- TITRATION SCHEDULE -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <p style="color: #4A7C59; font-size: 14px; font-weight: 700; margin: 0 0 10px 0;">Titration Schedule</p>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td width="25%" style="text-align: center; padding: 8px 4px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #E8F3EB; border-radius: 6px;">
+                                            <tr><td style="padding: 12px 6px; text-align: center;">
+                                                <p style="color: #4A7C59; font-size: 10px; text-transform: uppercase; margin: 0;">Week 1-2</p>
+                                                <p style="color: #333; font-size: 18px; font-weight: 700; margin: 4px 0 0 0;">25 mg</p>
+                                            </td></tr>
+                                        </table>
+                                    </td>
+                                    <td width="25%" style="text-align: center; padding: 8px 4px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #D4EBDA; border-radius: 6px;">
+                                            <tr><td style="padding: 12px 6px; text-align: center;">
+                                                <p style="color: #4A7C59; font-size: 10px; text-transform: uppercase; margin: 0;">Week 3-4</p>
+                                                <p style="color: #333; font-size: 18px; font-weight: 700; margin: 4px 0 0 0;">50 mg</p>
+                                            </td></tr>
+                                        </table>
+                                    </td>
+                                    <td width="25%" style="text-align: center; padding: 8px 4px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #B8D8C2; border-radius: 6px;">
+                                            <tr><td style="padding: 12px 6px; text-align: center;">
+                                                <p style="color: #3A6648; font-size: 10px; text-transform: uppercase; margin: 0;">Week 5+</p>
+                                                <p style="color: #333; font-size: 18px; font-weight: 700; margin: 4px 0 0 0;">75 mg</p>
+                                            </td></tr>
+                                        </table>
+                                    </td>
+                                    <td width="25%" style="text-align: center; padding: 8px 4px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #4A7C59; border-radius: 6px;">
+                                            <tr><td style="padding: 12px 6px; text-align: center;">
+                                                <p style="color: #B8D8C2; font-size: 10px; text-transform: uppercase; margin: 0;">Max</p>
+                                                <p style="color: #fff; font-size: 18px; font-weight: 700; margin: 4px 0 0 0;">100 mg</p>
+                                            </td></tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- REP NOTES (LSC_RichTextInput) -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <!-- LSC_RichTextInput: dosingNotes -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #FFFBF0; border: 1px solid #E8DFC0; border-radius: 6px;">
+                                <tr>
+                                    <td style="padding: 14px 16px;">
+                                        <p style="color: #8B7D3C; font-size: 12px; font-weight: 600; margin: 0 0 6px 0;">Additional Notes:</p>
+                                        <div style="color: #555; font-size: 14px; line-height: 1.6;">{{dosingNotes}}</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- /LSC_RichTextInput -->
+                        </td>
+                    </tr>
+
+                    <!-- ADMINISTRATION NOTES -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left: 3px solid #4A7C59; background-color: #F8FAF8;">
+                                <tr>
+                                    <td style="padding: 12px 16px;">
+                                        <p style="color: #4A7C59; font-size: 13px; font-weight: 700; margin: 0 0 4px 0;">Administration</p>
+                                        <p style="color: #555; font-size: 13px; line-height: 1.5; margin: 0;">Take with food. Swallow capsule whole; do not crush, chew, or open. Administer at approximately the same time each day.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="padding: 10px 40px 20px 40px;">
+                            <p style="color: #555; font-size: 14px; margin: 0 0 4px 0;">Best regards,</p>
+                            <p style="color: #4A7C59; font-size: 15px; font-weight: 600; margin: 0;">{{sender.firstname}} {{sender.lastname}}</p>
+                            <p style="color: #888; font-size: 13px; margin: 4px 0 0 0;">{{sender.title}} | {{sender.company}}</p>
+                        </td>
+                    </tr>
+
+                    <!-- COMPLIANCE -->
+                    <tr>
+                        <td style="background-color: #F0F0F0; padding: 14px 40px; text-align: center;">
+                            <p style="font-size: 10px; color: #999; line-height: 1.5; margin: 0;">This email was sent via Life Sciences Cloud. Please see full Prescribing Information at the link provided.<br>Renavox<sup>&reg;</sup> is a registered trademark. All rights reserved.</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Glucomine - Formulary Addition</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #EBF0F5; font-family: Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EBF0F5;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.07);">
+
+                    <!-- HEADER WITH BADGE -->
+                    <tr>
+                        <td style="background-color: #1A5276; padding: 28px 40px; text-align: center;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td style="background-color: #27AE60; border-radius: 20px; padding: 5px 18px;">
+                                        <p style="color: #fff; font-size: 12px; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 1px;">Formulary Added</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h1 style="color: #ffffff; margin: 14px 0 0 0; font-size: 26px; font-weight: 700;">Glucomine<sup style="font-size: 14px;">&reg;</sup></h1>
+                            <p style="color: #8AB4D4; font-size: 13px; margin: 6px 0 0 0;">(pralinozide acetate) Injectable, 1.5 mg/mL</p>
+                        </td>
+                    </tr>
+
+                    <!-- GREETING -->
+                    <tr>
+                        <td style="padding: 24px 40px 12px 40px;">
+                            <p style="color: #333; font-size: 15px; margin: 0;">Dear {{recipient.name}},</p>
+                            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 10px 0 0 0;">I am pleased to inform you that <strong style="color: #1A5276;">Glucomine<sup>&reg;</sup></strong> has been added to formulary, making it more accessible for your patients with type 2 diabetes.</p>
+                        </td>
+                    </tr>
+
+                    <!-- HEALTH PLAN SELECTOR (LSC_DropDownInput) -->
+                    <tr>
+                        <td style="padding: 10px 40px 16px 40px;">
+                            <!-- LSC_DropDownInput: healthPlan -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EBF5FB; border: 1px solid #AED6F1; border-radius: 6px;">
+                                <tr>
+                                    <td style="padding: 12px 16px;">
+                                        <p style="color: #1A5276; font-size: 12px; font-weight: 600; margin: 0 0 2px 0;">Health Plan:</p>
+                                        <p style="color: #333; font-size: 14px; font-weight: 600; margin: 0;">{{healthPlan}}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- /LSC_DropDownInput -->
+                        </td>
+                    </tr>
+
+                    <!-- FORMULARY STATUS CARD -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 2px solid #1A5276; border-radius: 8px; overflow: hidden;">
+                                <tr>
+                                    <td style="background-color: #1A5276; padding: 10px 16px;">
+                                        <p style="color: #fff; font-size: 14px; font-weight: 700; margin: 0;">Formulary Status</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="50%" style="padding: 14px 16px; border-bottom: 1px solid #E8E8E8; border-right: 1px solid #E8E8E8;">
+                                                    <p style="color: #888; font-size: 11px; text-transform: uppercase; margin: 0;">Coverage Tier</p>
+                                                    <p style="color: #1A5276; font-size: 16px; font-weight: 700; margin: 4px 0 0 0;">Tier 2 - Preferred</p>
+                                                </td>
+                                                <td width="50%" style="padding: 14px 16px; border-bottom: 1px solid #E8E8E8;">
+                                                    <p style="color: #888; font-size: 11px; text-transform: uppercase; margin: 0;">Effective Date</p>
+                                                    <p style="color: #1A5276; font-size: 16px; font-weight: 700; margin: 4px 0 0 0;">January 1, 2026</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%" style="padding: 14px 16px; border-right: 1px solid #E8E8E8;">
+                                                    <p style="color: #888; font-size: 11px; text-transform: uppercase; margin: 0;">Copay Range</p>
+                                                    <p style="color: #1A5276; font-size: 16px; font-weight: 700; margin: 4px 0 0 0;">$25 - $50</p>
+                                                </td>
+                                                <td width="50%" style="padding: 14px 16px;">
+                                                    <p style="color: #888; font-size: 11px; text-transform: uppercase; margin: 0;">Quantity Limit</p>
+                                                    <p style="color: #1A5276; font-size: 16px; font-weight: 700; margin: 4px 0 0 0;">4 pens / 30 days</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- PRIOR AUTHORIZATION INFO -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #F0FFF4; border: 1px solid #C8E6C9; border-radius: 6px;">
+                                <tr>
+                                    <td style="padding: 14px 16px;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="28" valign="top">
+                                                    <span style="color: #27AE60; font-size: 18px; font-weight: bold;">&#10003;</span>
+                                                </td>
+                                                <td>
+                                                    <p style="color: #27AE60; font-size: 14px; font-weight: 700; margin: 0;">No Prior Authorization Required</p>
+                                                    <p style="color: #666; font-size: 13px; line-height: 1.5; margin: 6px 0 0 0;">For patients meeting standard criteria (A1C &ge; 7.0%, trial of metformin), Glucomine can be prescribed without prior authorization under this formulary.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- PATIENT SAVINGS -->
+                    <tr>
+                        <td style="padding: 0 40px 20px 40px;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #1A5276; border-radius: 8px;">
+                                <tr>
+                                    <td style="padding: 18px 20px; text-align: center;">
+                                        <p style="color: #8AB4D4; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin: 0;">Patient Savings Program</p>
+                                        <p style="color: #ffffff; font-size: 15px; margin: 8px 0 0 0;">Eligible patients may pay as little as <strong style="font-size: 22px;">$10/month</strong> with the Glucomine Savings Card</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td style="padding: 10px 40px 20px 40px;">
+                            <p style="color: #555; font-size: 14px; margin: 0 0 4px 0;">Best regards,</p>
+                            <p style="color: #1A5276; font-size: 15px; font-weight: 600; margin: 0;">{{sender.firstname}} {{sender.lastname}}</p>
+                            <p style="color: #888; font-size: 13px; margin: 4px 0 0 0;">{{sender.title}} | {{sender.company}}</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background-color: #F0F0F0; padding: 14px 40px; text-align: center;">
+                            <p style="font-size: 10px; color: #999; line-height: 1.5; margin: 0;">This email was sent via Life Sciences Cloud. Formulary status may vary by plan and region.<br>Glucomine<sup>&reg;</sup> is a registered trademark. All rights reserved.</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
