@@ -46,14 +46,53 @@ Two date/time pickers let the rep suggest a specific meeting date and time. Appe
 - `default` sets the pre-filled value
 
 ### LSC_EmailFragments (Clinical Information)
-Allows the rep to select and insert pre-approved clinical content fragments (e.g., study summaries, safety data) into the email.
+Email fragments are pieces of HTML that reps can select and combine in the email body. The fragment files live in the `fragments/` folder inside the template ZIP. Each filename maps to a fragment record name in Salesforce.
 
 ```html
-<div class="LSC_EmailFragments" min="0" max="3">Select additional clinical information to include:</div>
+<table class="LSC_EmailFragments" min="0" max="3">
+</table>
 ```
 
-- `min` / `max` attributes control how many fragments can be inserted (0–3 here)
-- Fragments are configured in the LSC Admin Console, not in the template HTML
+| Attribute | Description |
+|-----------|-------------|
+| `min` | Minimum fragments the user must select. Set `min="0"` to make selection optional. |
+| `max` | Maximum fragments the user can select. |
+
+**Important rules for fragments:**
+- The `LSC_EmailFragments` element must be a `<table>` tag
+- Each fragment file must wrap content in `<tr><td>` tags
+- Use `<a href>` for images or links inside fragments
+- Do not include `<html>` or `<body>` tags in fragment files
+
+#### Included Fragments
+
+This template includes 3 sample fragments in `fragments/`:
+
+| File | Description |
+|------|-------------|
+| `Pivotal_Trial_Summary.html` | Phase III APEX-HT trial results with BP reduction data |
+| `Safety_Profile.html` | Adverse reaction rates and link to full prescribing info |
+| `Dosing_Guide.html` | Starting dose, titration, and renal impairment guidance |
+
+#### Fragment File Structure
+
+Each fragment follows this pattern:
+
+```html
+<tr>
+    <td>
+    <table role="presentation" width="100%">
+    <tr>
+    <td style="padding: 16px 20px;">
+        <p>Fragment title</p>
+        <p>Fragment content...</p>
+        <a href="{{link}}">Optional link</a>
+    </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+```
 
 ## Mustache Variables
 - `{{recipient.lastname}}` - Recipient's last name (used with dropdown salutation)
