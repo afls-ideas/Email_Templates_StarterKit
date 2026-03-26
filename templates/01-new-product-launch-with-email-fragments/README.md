@@ -1,4 +1,4 @@
-# 01 - New Product Launch
+# 01 - New Product Launch with Email Fragments
 
 ## Description
 Announces a new pharmaceutical product (Cardivex) to healthcare professionals. Features a bold hero banner with product branding, key highlights section, and a call-to-action to schedule a meeting.
