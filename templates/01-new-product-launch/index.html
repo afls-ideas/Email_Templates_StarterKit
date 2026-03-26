@@ -45,7 +45,7 @@
                     <!-- GREETING -->
                     <tr>
                         <td style="padding: 30px 40px 10px 40px;">
-                            <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0;">Dear {{recipient.name}},</p>
+                            <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0;">Dear <span class="LSC_DropDownInput"><span default>Dr.</span><span>Professor</span><span>Mr.</span><span>Ms.</span></span> {{recipient.lastname}},</p>
                         </td>
                     </tr>
 
@@ -108,6 +108,15 @@
                                     </td>
                                 </tr>
                             </table>
+                        </td>
+                    </tr>
+
+                    <!-- MEETING DATE/TIME SUGGESTION -->
+                    <tr>
+                        <td style="padding: 0 40px 10px 40px;">
+                            <p style="color: #555555; font-size: 14px; line-height: 1.6; margin: 0; text-align: center;">
+                                Suggested: <span class="LSC_DateTimeInput" default="01/15/2025"></span> at <span class="LSC_DateTimeInput" time default="10:00"></span>
+                            </p>
                         </td>
                     </tr>
 

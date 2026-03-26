@@ -6,10 +6,60 @@ Announces a new pharmaceutical product (Cardivex) to healthcare professionals. F
 ## Primary Color
 Navy (#1B365D)
 
-## LSC Features Used
-- **LSC_RichTextInput** (`personalMessage`) - Personalized message area for the rep to tailor content per HCP
-- **LSC_EmailFragments** (`clinicalInfoFragments`) - Insertable clinical data fragments for additional study information
-- **Mustache Variables** - `{{recipient.name}}`, `{{sender.firstname}}`, `{{sender.lastname}}`, `{{sender.title}}`, `{{sender.company}}`, `{{meetingScheduleLink}}`
+## LSC Dynamic Capabilities
+
+### LSC_DropDownInput (Greeting Salutation)
+A picklist in the greeting line lets the rep choose the appropriate title for the recipient. Options: **Dr.** (default), Professor, Mr., Ms. The selected value is inserted inline before `{{recipient.lastname}}`.
+
+```html
+<span class="LSC_DropDownInput">
+  <span default>Dr.</span>
+  <span>Professor</span>
+  <span>Mr.</span>
+  <span>Ms.</span>
+</span>
+```
+
+- `default` attribute on a `<span>` sets the pre-selected option
+- Add a `link="url"` attribute to any option to attach a hyperlink to that choice
+
+### LSC_RichTextInput (Personalized Message)
+An editable rich-text area where the rep can customize the message body before sending. The default text serves as a starting point that can be freely rewritten.
+
+```html
+<div class="LSC_RichTextInput">Based on our recent conversation...</div>
+```
+
+- Content inside the tag is the default text shown in the editor
+- Supports bold, italic, lists, and links at send time
+
+### LSC_DateTimeInput (Meeting Date & Time)
+Two date/time pickers let the rep suggest a specific meeting date and time. Appears below the "Schedule a Meeting" button.
+
+```html
+<span class="LSC_DateTimeInput" default="01/15/2025"></span>
+<span class="LSC_DateTimeInput" time default="10:00"></span>
+```
+
+- Without `time` attribute: renders a **date picker** (format: MM/DD/YYYY)
+- With `time` attribute: renders a **time picker** (format: HH:MM)
+- `default` sets the pre-filled value
+
+### LSC_EmailFragments (Clinical Information)
+Allows the rep to select and insert pre-approved clinical content fragments (e.g., study summaries, safety data) into the email.
+
+```html
+<div class="LSC_EmailFragments" min="0" max="3">Select additional clinical information to include:</div>
+```
+
+- `min` / `max` attributes control how many fragments can be inserted (0–3 here)
+- Fragments are configured in the LSC Admin Console, not in the template HTML
+
+## Mustache Variables
+- `{{recipient.lastname}}` - Recipient's last name (used with dropdown salutation)
+- `{{sender.firstname}}`, `{{sender.lastname}}` - Sender's name
+- `{{sender.title}}`, `{{sender.company}}` - Sender's role and company
+- `{{meetingScheduleLink}}` - CTA button URL for scheduling
 
 ## Layout Features
 - Hero banner with product name, dosage form, and FDA approval badge
